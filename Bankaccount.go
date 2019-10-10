@@ -19,9 +19,9 @@ func  create() {
 	fmt.Println("enter the balance: ")
 	fmt.Scan(&b.bal)
 	
-    fmt.Println()
+        fmt.Println()
 
-    fmt.Println("Account no: ", b.acc_no)
+        fmt.Println("Account no: ", b.acc_no)
 	fmt.Println("Name: ", b.name)
 	fmt.Println("Account type: ", b.acctype)
 	fmt.Println("Balance: ", b.bal)
@@ -36,13 +36,13 @@ func  create() {
 	switch c {
 	case 1:
 		fmt.Println("enter money to be deposited")
-        var x int
-        fmt.Scan(&x)
+                var x int
+                fmt.Scan(&x)
 		fmt.Println("deposited: ", b.deposit(x))
 	case 2:
 		fmt.Println("enter money to be withdrawn")
-	    var y int
-	    fmt.Scan(&y)
+	        var y int
+	        fmt.Scan(&y)
 		fmt.Println("remaining balance: ", b.withdraw(y))
 	case 3:
 		fmt.Println("Available Balance: ", b.check())	
