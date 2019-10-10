@@ -10,11 +10,12 @@ func Reverse (s string) string{
 }
 
 func main(){
-	fmt.Println("testing")
-	s:="RADAR SIS RADAR"
+	
+    fmt.Println("enter a string")
+    var s string
+    fmt.Scanln(&s)
 	x:=Reverse(s)
-	fmt.Println(s)
-	fmt.Println(x)
+	
     if x == s{
         fmt.Println("Palindrome")
     }else{
